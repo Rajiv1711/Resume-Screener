@@ -1,0 +1,71 @@
+Resume-Screener/
+│
+├── frontend/                      # React frontend application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/           # React components
+│   │   ├── pages/               # Page components
+│   │   ├── services/            # API services
+│   │   ├── utils/               # Utility functions
+│   │   ├── App.js              # Main App component
+│   │   └── index.js            # Entry point
+│   ├── package.json
+│   └── README.md
+│
+├── backend/                       # FastAPI backend application
+│   ├── app/
+│   │   ├── api/                 # API routes
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py         # Authentication endpoints
+│   │   │   ├── resumes.py      # Resume handling endpoints
+│   │   │   └── users.py        # User management endpoints
+│   │   ├── core/               # Core application code
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py       # Configuration settings
+│   │   │   ├── security.py     # Security utilities
+│   │   │   └── database.py     # Database connections
+│   │   ├── models/             # Database models
+│   │   │   ├── __init__.py
+│   │   │   └── models.py       # SQLAlchemy models
+│   │   ├── services/           # Business logic
+│   │   │   ├── __init__.py
+│   │   │   ├── resume.py       # Resume processing service
+│   │   │   └── ml.py          # ML model integration
+│   │   └── main.py            # FastAPI application
+│   ├── requirements.txt
+│   └── README.md
+│
+├── ml/                           # Machine Learning models
+│   ├── models/                  # Trained models
+│   │   ├── resume_classifier/
+│   │   └── skill_extractor/
+│   ├── notebooks/              # Jupyter notebooks for model development
+│   ├── src/                    # Model training code
+│   │   ├── data_preprocessing/
+│   │   ├── training/
+│   │   └── evaluation/
+│   ├── requirements.txt
+│   └── README.md
+│
+├── infrastructure/               # Infrastructure as Code
+│   ├── azure/                  # Azure-specific configurations
+│   │   ├── blob-storage.tf
+│   │   ├── cognitive-services.tf
+│   │   └── main.tf
+│   └── docker/
+│       ├── frontend.Dockerfile
+│       ├── backend.Dockerfile
+│       └── docker-compose.yml
+│
+├── .github/                      # GitHub Actions workflows
+│   └── workflows/
+│       ├── frontend-ci.yml      # Frontend CI pipeline
+│       ├── backend-ci.yml       # Backend CI pipeline
+│       └── deploy.yml           # Deployment pipeline
+│
+├── tests/                        # Test suites
+│   ├── frontend/
+│   ├── backend/
+│   └── integration/
+│
+└── README.md                     # Project documentation
